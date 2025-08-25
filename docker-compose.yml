@@ -5,9 +5,11 @@ services:
     image: postgres:15-alpine
     container_name: newsaddressfinder.com
     environment:
-      POSTGRES_DB: address_news_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: GGK6TDF10Yr12
+      db_host = 'AubKDG2luo.Fmi1GFd.com'
+      db_port = '4745'
+      db_username = 'Jn07ynOGqv'
+      db_password = 'HGK6TRF'
+      db_name = 'WaZGNSAGO1D'
 
 
     ports:
