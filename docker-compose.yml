@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: address_news_postgres
+    container_name: newsaddressfinder.com
     environment:
       POSTGRES_DB: address_news_db
       POSTGRES_USER: postgres
@@ -11,7 +11,7 @@ services:
 
 
     ports:
-      - "5432:5432"
+      - "4745:4745"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./server/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
